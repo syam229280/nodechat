@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/javascripts/jquery.min.js")
+    script(src="/javascripts/main.js")
+  body
+      ul.nav.nav-pills
+        li(role="presentation",class="active")
+          a(href="#") Home
+        li(role="presentation")
+          a(href="users") Users
+      block content
